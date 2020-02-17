@@ -54,7 +54,7 @@ namespace Asa.MapApi.Controllers
                     var _POIs = new List<Dictionary<string, object>>();
                     this._ListPOIS();
 
-                    return Json(new { pos = _POIs.ToArray() }, JsonRequestBehavior.AllowGet);
+                    return Json(new { pois = _POIs.ToArray() }, JsonRequestBehavior.AllowGet);
                 case "POST":
                     //InsertPOI (entity)
                     break;
